@@ -1,0 +1,12 @@
+{
+  "name": "rxjs5-demos",
+  "version": "1.0.0",
+  "description": "RxJS5 demos",
+  "main": "index.js",
+  "repository": "https://github.com/jkest/rxjs5-demos.git",
+  "author": "Stephen J",
+  "license": "MIT",
+  "dependencies": {
+    "rxjs": "^5.5.6"
+  }
+}
