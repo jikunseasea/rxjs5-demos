@@ -6,7 +6,11 @@
   "repository": "https://github.com/jkest/rxjs5-demos.git",
   "author": "Stephen J",
   "license": "MIT",
-  "dependencies": {
-    "rxjs": "^5.5.6"
+  "devDependencies": {
+    "browser-sync": "^2.23.2",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "start": "gulp"
   }
 }
