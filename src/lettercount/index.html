@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <p>Example to show getting the current length of the input</p>
+  <input id="toCount">
+  <p id="result">Start Typing!</p>
+  <script src="https://unpkg.com/@reactivex/rxjs@5.5.6/dist/global/Rx.js"></script>
+  <script>
+    const ndInput = document.getElementById('toCount');
+    const ndR = document.getElementById('result');
+    const rStr = ndR.innerHTML;
+    Rx.Observable.fromEvent(ndInput, 'keyup')
+                 .pluck('target', 'value', 'length')
+                 .subscribe(length => {
+                   ndR.innerHTML = length > 0 ? length : rStr;
+                 });
+  </script>
+</body>
+</html>
