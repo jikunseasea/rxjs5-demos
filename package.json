@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "description": "RxJS5 demos",
   "main": "index.js",
-  "repository": "https://github.com/jkest/rxjs5-demos.git",
   "author": "Stephen J",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.23.2",
-    "gulp": "^3.9.1"
+    "browser-sync": "^2.23.5",
+    "gh-pages": "^1.1.0"
   },
   "scripts": {
-    "start": "gulp"
-  }
+    "start": "browser-sync start --files 'src/**/*' --server src",
+    "deploy": "gh-pages -d src"
+  },
+  "homepage": "http://jkest.github.io/rxjs5-demos/"
 }
