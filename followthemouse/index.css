@@ -1,0 +1,16 @@
+.contrastBlock {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  position: absolute;
+}
+
+.tail {
+  color: red;
+  background-color: #666;
+}
+
+.wagging {
+  color: green;
+  background-color: #eee;
+}
